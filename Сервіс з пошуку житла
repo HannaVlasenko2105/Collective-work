@@ -93,6 +93,14 @@ void changeMonths() {
       printf("Невірний номер замовлення.\n");
       return;
   }
+
+  printf("Введіть нову тривалість оренди (у місяцях): ");
+  scanf("%d", &newDuration);
+
+  printf("Ви бажаєте змінити тривалість оренди для замовлення №%d на %d місяців?\n", orderNumber + 1, newDuration);
+  printf("(1 - Так/0 - Ні)\n");
+  printf("Ваш вибір: ");
+  scanf("%d", &choice);
 }
 
 void cancelOrder() {
