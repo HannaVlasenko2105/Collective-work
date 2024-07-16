@@ -41,6 +41,31 @@ void rentApartment() {
   printf("Введіть місто (Київ, Львів, Чернівці, Полтава): \n");
   char city[50];
   scanf("%s", city);
+
+  int rent;
+      printf("\nБажаєте орендувати цю квартиру? (1-так/0-ні): ");
+      scanf("%d", &rent);
+      if (rent == 1) {
+        orders[orderCount] =
+            (struct Order){.type = "",
+                           .address = "",
+                           .city = "",
+                           .floor = apartments[i].floor,
+                           .area = apartments[i].area,
+                           .price = apartments[i].price,
+                           .months = 0};
+        strcpy(orders[orderCount].type, apartments[i].type);
+        strcpy(orders[orderCount].address, apartments[i].address);
+        strcpy(orders[orderCount].city, apartments[i].city);
+        printf("Введіть тривалість оренди (місяців): ");
+        scanf("%d", &orders[orderCount].months);
+        printf("Замовлення успішно створено!\n");
+        orderCount++;
+      }
+      found = 1;
+      break;
+    }
+  }
 }
 
 int main()
