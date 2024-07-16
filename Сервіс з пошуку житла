@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+struct User {
+  char username[100];
+  char password[100];
+  char name[100];
+  char email[100];
+  char number[50];
+};
+
 void createAccount(){
   printf("\n-------Створення нового акаунту------\n");
   printf("\nВведіть своє ім'я користувача: ");
