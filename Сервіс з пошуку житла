@@ -12,6 +12,10 @@ void viewAccountInfo(struct User newUser) {
  
 }
 
+void changeMonths() {
+
+}
+
 int main()
 {
     
