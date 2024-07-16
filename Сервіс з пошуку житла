@@ -84,7 +84,17 @@ void changeMonths() {
 }
 
 void cancelOrder() {
+  int orderNumber;
+  int choice;
 
+  printf("Введіть номер замовлення: ");
+  scanf("%d", &orderNumber);
+  orderNumber--;
+
+  if (orderNumber < 0 || orderNumber >= orderCount) {
+      printf("Невірний номер замовлення.\n");
+      return;
+  }
 }
 
 void rentApartment() {
