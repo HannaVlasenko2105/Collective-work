@@ -26,6 +26,13 @@ struct ApartmentsInfo {
   float price;
 };
 
+struct ApartmentsInfo apartments[10];
+
+struct User newUser;
+
+struct Order orders[10];
+int orderCount = 0;
+
 void createAccount(){
   printf("\n-------Створення нового акаунту------\n");
   printf("\nВведіть своє ім'я користувача: ");
