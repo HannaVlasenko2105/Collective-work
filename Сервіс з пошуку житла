@@ -33,7 +33,14 @@ void cancelOrder() {
 }
 
 void rentApartment() {
+  printf("\n-------Пошук і оренда квартири-------\n");
+  printf("Введіть тип квартири(1-кімнатна, 2-кімнатна, 3-кімнатна): \n");
+  char type[50];
+  scanf("%s", type);
 
+  printf("Введіть місто (Київ, Львів, Чернівці, Полтава): \n");
+  char city[50];
+  scanf("%s", city);
 }
 
 int main()
