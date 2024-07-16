@@ -80,7 +80,19 @@ void viewAccountInfo(struct User newUser) {
 }
 
 void changeMonths() {
+  int orderNumber;
+  int newDuration;
+  int choice;
 
+  printf("Введіть номер замовлення: ");
+  scanf("%d", &orderNumber);
+
+  orderNumber--;
+
+  if (orderNumber < 0 || orderNumber >= orderCount) {
+      printf("Невірний номер замовлення.\n");
+      return;
+  }
 }
 
 void cancelOrder() {
