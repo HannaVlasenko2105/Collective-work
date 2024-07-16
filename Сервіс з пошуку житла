@@ -50,7 +50,23 @@ void createAccount(){
 }
 
 void login() {
-
+  char username[100];
+  char password[100];
+  printf("\n-----------Вхід в систему------------\n");
+  printf("\nВведіть своє ім'я користувача: ");
+  scanf("%s", username);
+  if (strcmp(username, newUser.username) != 0) {
+    printf("Неправильне ім'я користувача.\n");
+  } else {
+    printf("Введіть свій пароль: ");
+    scanf("%s", password);
+    if (strcmp(password, newUser.password) != 0) {
+      printf("Неправильний пароль.\n");
+    } else {
+      printf("Увійшли як %s.\n", username);
+    }
+  }
+  printf("-------------------------------------\n");
 }
 
 void viewAccountInfo(struct User newUser) {
