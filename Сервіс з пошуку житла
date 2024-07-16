@@ -70,7 +70,13 @@ void login() {
 }
 
 void viewAccountInfo(struct User newUser) {
- 
+  printf("\n--------------Ваш акаунт--------------\n");
+  printf("Ім'я користувача: %s\n", newUser.username);
+  printf("Пароль: %s\n", newUser.password);
+  printf("Ім'я: %s\n", newUser.name);
+  printf("Електронна пошта: %s\n", newUser.email);
+  printf("Номер телефону: %s\n", newUser.number);
+  printf("-------------------------------------\n");
 }
 
 void changeMonths() {
