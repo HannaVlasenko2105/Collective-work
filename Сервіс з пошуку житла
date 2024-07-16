@@ -128,7 +128,75 @@ if (!found) {
 }
 
 
-int main()
-{
-    
+int main() {
+  
+  strcpy(apartments[0].type, "1-кімнатна");
+  strcpy(apartments[0].address, "Вул. Сумська, 45");
+  strcpy(apartments[0].city, "Львів");
+  apartments[0].floor = 3;
+  apartments[0].area = 40;
+  apartments[0].price = 5000;
+
+  strcpy(apartments[1].type, "2-кімнатна");
+  strcpy(apartments[1].address, "Вул. Мазепи, 15");
+  strcpy(apartments[1].city, "Львів");
+  apartments[1].floor = 5;
+  apartments[1].area = 60;
+  apartments[1].price = 8000;
+
+  strcpy(apartments[2].type, "3-кімнатна");
+  strcpy(apartments[2].address, "Вул. Грушевського, 10");
+  strcpy(apartments[2].city, "Чернівці");
+  apartments[2].floor = 2;
+  apartments[2].area = 90;
+  apartments[2].price = 12000;
+
+  strcpy(apartments[3].type, "1-кімнатна");
+  strcpy(apartments[3].address, "Вул. Шевченка, 20");
+  strcpy(apartments[3].city, "Київ");
+  apartments[3].floor = 1;
+  apartments[3].area = 35;
+  apartments[3].price = 4000;
+
+  strcpy(apartments[4].type, "2-кімнатна");
+  strcpy(apartments[4].address, "Вул. Франка, 30");
+  strcpy(apartments[4].city, "Київ");
+  apartments[4].floor = 4;
+  apartments[4].area = 55;
+  apartments[4].price = 7000;
+
+  strcpy(apartments[5].type, "3-кімнатна");
+  strcpy(apartments[5].address, "Вул. Бандери, 5");
+  strcpy(apartments[5].city, "Київ");
+  apartments[5].floor = 6;
+  apartments[5].area = 85;
+  apartments[5].price = 11000;
+
+  strcpy(apartments[6].type, "1-кімнатна");
+  strcpy(apartments[6].address, "Вул. Миру, 8");
+  strcpy(apartments[6].city, "Полтава");
+  apartments[6].floor = 2;
+  apartments[6].area = 38;
+  apartments[6].price = 4500;
+
+  strcpy(apartments[7].type, "2-кімнатна");
+  strcpy(apartments[7].address, "Вул. Лесі Українки, 12");
+  strcpy(apartments[7].city, "Полтава");
+  apartments[7].floor = 3;
+  apartments[7].area = 65;
+  apartments[7].price = 7500;
+
+  strcpy(apartments[8].type, "3-кімнатна");
+  strcpy(apartments[8].address, "Вул. Незалежності, 22");
+  strcpy(apartments[8].city, "Чернівці");
+  apartments[8].floor = 4;
+  apartments[8].area = 95;
+  apartments[8].price = 13000;
+
+  strcpy(apartments[9].type, "1-кімнатна");
+  strcpy(apartments[9].address, "Вул. Свободи, 18");
+  strcpy(apartments[9].city, "Чернівці");
+  apartments[9].floor = 5;
+  apartments[9].area = 42;
+  apartments[9].price = 5200;
 }
