@@ -144,6 +144,8 @@ void viewOrders() {
   printf("-----------Ваші замовлення-----------\n");
 
   for (int i = 0; i < orderCount; i++) {
+  if (orders[i].months == 0) continue;
+
     printf("Замовлення %d\n", i + 1);
     printf("Тип: %s\n", orders[i].type);
     printf("Адреса: %s\n", orders[i].address);
