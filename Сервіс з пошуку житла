@@ -216,6 +216,20 @@ void rentApartment() {
   char city[50];
   scanf("%s", city);
 
+  int found = 0;
+  for (int i = 0; i < 10; i++) {
+    if (strcmp(type, apartments[i].type) == 0 &&
+        strcmp(city, apartments[i].city) == 0) {
+      printf("\nКвартира знайдена!\n");
+      printf("Квартира %d\n", i + 1);
+      printf("Тип: %s\n", apartments[i].type);
+      printf("Адреса: %s\n", apartments[i].address);
+      printf("Місто: %s\n", apartments[i].city);
+      printf("Поверх: %d\n", apartments[i].floor);
+      printf("Кімнат: %d\n", apartments[i].rooms);
+      printf("Площа: %d\n", apartments[i].area);
+      printf("Ціна за місяць: %.2f\n", apartments[i].price);
+
   int rent;
       printf("\nБажаєте орендувати цю квартиру? (1-так/0-ні): ");
       scanf("%d", &rent);
