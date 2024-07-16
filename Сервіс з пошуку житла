@@ -1,7 +1,19 @@
 #include <stdio.h>
 
 void createAccount(){
-
+  printf("\n-------Створення нового акаунту------\n");
+  printf("\nВведіть своє ім'я користувача: ");
+  scanf("%s", newUser.username);
+  printf("Введіть свій пароль: ");
+  scanf("%s", newUser.password);
+  printf("Введіть своє ім'я: ");
+  scanf("%s", newUser.name);
+  printf("Введіть свою електронну адресу: ");
+  scanf("%s", newUser.email);
+  printf("Введіть свій номер телефону: ");
+  scanf("%s", newUser.number);
+  printf("\nАкаунт успішно створено!\n");
+  printf("-------------------------------------\n");
 }
 
 void login() {
