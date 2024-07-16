@@ -140,6 +140,30 @@ void cancelOrder() {
   }
 }
 
+void viewOrders() {
+  printf("-----------Ваші замовлення-----------\n");
+
+  for (int i = 0; i < orderCount; i++) {
+    printf("Замовлення %d\n", i + 1);
+    printf("Тип: %s\n", orders[i].type);
+    printf("Адреса: %s\n", orders[i].address);
+    printf("Місто: %s\n", orders[i].city);
+    printf("Поверх: %d\n", orders[i].floor);
+    printf("Площа: %d\n", orders[i].area);
+    printf("Ціна за місяць: %.2f\n", orders[i].price);
+    printf("Місяців оренди: %d\n", orders[i].months);
+    float totalCost = orders[i].price * orders[i].months;
+    printf("Загальна вартість за %d місяців: %.2f\n", orders[i].months,
+           totalCost);
+    printf("\n");
+  }
+  
+  if (orderCount == 0) {
+    printf("Поточні замовлення відсутні.\n");
+    return;
+  }
+}
+
 void displayApartments() {
   printf("\n--------Доступні апартаменти---------\n");
   for (int i = 0; i < 10; i++) {
