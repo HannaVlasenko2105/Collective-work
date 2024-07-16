@@ -32,6 +32,10 @@ void cancelOrder() {
 
 }
 
+void rentApartment() {
+
+}
+
 int main()
 {
     
