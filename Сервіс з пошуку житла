@@ -297,7 +297,7 @@ int main() {
   apartments[1].area = 60;
   apartments[1].price = 8000;
 
-  strcpy(apartments[2].type, "3-кімнатна");
+  strcpy(apartments[2].type, "2-кімнатна");
   strcpy(apartments[2].address, "Вул. Грушевського, 10");
   strcpy(apartments[2].city, "Чернівці");
   apartments[2].floor = 2;
