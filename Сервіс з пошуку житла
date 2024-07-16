@@ -8,6 +8,10 @@ void login() {
 
 }
 
+void viewAccountInfo(struct User newUser) {
+ 
+}
+
 int main()
 {
     
