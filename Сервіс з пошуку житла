@@ -101,6 +101,15 @@ void changeMonths() {
   printf("(1 - Так/0 - Ні)\n");
   printf("Ваш вибір: ");
   scanf("%d", &choice);
+
+  if (choice == 1) {
+      orders[orderNumber].months = newDuration;
+      printf("Тривалість оренди для замовлення №%d була змінена на %d місяців.\n", orderNumber + 1, newDuration);
+  } else if (choice == 0) {
+      printf("Тривалість оренди для замовлення №%d не була змінена.\n", orderNumber + 1);
+  } else {
+      printf("Невірний вибір. Будь ласка, введіть 1 або 0.\n");
+  }
 }
 
 void cancelOrder() {
