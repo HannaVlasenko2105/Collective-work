@@ -22,7 +22,7 @@ struct ApartmentsInfo {
   char type[50];
   char address[100];
   char city[50];
-  int rooms, floor, area;
+  int floor, area;
   float price;
 };
 
@@ -235,7 +235,6 @@ void rentApartment() {
       printf("Адреса: %s\n", apartments[i].address);
       printf("Місто: %s\n", apartments[i].city);
       printf("Поверх: %d\n", apartments[i].floor);
-      printf("Кімнат: %d\n", apartments[i].rooms);
       printf("Площа: %d\n", apartments[i].area);
       printf("Ціна за місяць: %.2f\n", apartments[i].price);
 
