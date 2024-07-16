@@ -162,6 +162,30 @@ void viewOrders() {
     printf("Поточні замовлення відсутні.\n");
     return;
   }
+
+  printf("-------------------------------------\n");
+  printf("1. Змінити тривалість оренди\n");
+  printf("2. Скасувати замовлення\n");
+  printf("3. Повернутися до меню\n");
+  printf("-------------------------------------\n");
+  printf("Оберіть дію: ");
+  int action;
+  scanf("%d", &action);
+  switch (action) {
+  case 1:
+    changeMonths();
+    break;
+  case 2:
+    cancelOrder();
+    break;
+  case 3:
+    printf("Повернення до меню.\n");
+    break;
+  default:
+    printf("Невірний вибір.\n");
+    break;
+  }
+  printf("-------------------------------------\n");
 }
 
 void displayApartments() {
