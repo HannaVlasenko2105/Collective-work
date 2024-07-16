@@ -95,6 +95,20 @@ void cancelOrder() {
       printf("Невірний номер замовлення.\n");
       return;
   }
+
+  printf("Ви бажаєте скасувати замовлення №%d?\n", orderNumber + 1);
+  printf("(1 - Так/0 - Ні)\n");
+  printf("Ваш вибір: ");
+  scanf("%d", &choice);
+
+  if (choice == 1) {
+      orders[orderNumber].months = 0;
+      printf("Замовлення №%d було скасовано.\n", orderNumber + 1);
+  } else if (choice == 0) {
+      printf("Замовлення №%d не було скасовано.\n", orderNumber + 1);
+  } else {
+      printf("Невірний вибір. Будь ласка, введіть 1 або 0.\n");
+  }
 }
 
 void rentApartment() {
