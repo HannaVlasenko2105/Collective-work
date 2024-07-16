@@ -140,6 +140,22 @@ void cancelOrder() {
   }
 }
 
+void displayApartments() {
+  printf("\n--------Доступні апартаменти---------\n");
+  for (int i = 0; i < 10; i++) {
+    if (strlen(apartments[i].type) == 0)
+      continue;
+    printf("Квартира %d\n", i + 1);
+    printf("Тип: %s\n", apartments[i].type);
+    printf("Адреса: %s\n", apartments[i].address);
+    printf("Місто: %s\n", apartments[i].city);
+    printf("Поверх: %d\n", apartments[i].floor);
+    printf("Площа: %d\n", apartments[i].area);
+    printf("Ціна за місяць: %.2f\n", apartments[i].price);
+    printf("-------------------------------------\n");
+  }
+}
+
 void rentApartment() {
   printf("\n-------Пошук і оренда квартири-------\n");
   printf("Введіть тип квартири(1-кімнатна, 2-кімнатна, 3-кімнатна): \n");
