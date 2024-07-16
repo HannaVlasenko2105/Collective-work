@@ -199,4 +199,39 @@ int main() {
   apartments[9].floor = 5;
   apartments[9].area = 42;
   apartments[9].price = 5200;
+
+  int choice;
+  do {
+    displayMenu();
+    printf("\nОберіть пункт меню: ");
+    scanf("%d", &choice);
+    switch (choice) {
+    case 1:
+      createAccount();
+      break;
+    case 2:
+      login();
+      break;
+    case 3:
+      viewAccountInfo(newUser);
+      break;
+    case 4:
+      viewOrders();
+      break;
+    case 5:
+      displayApartments();
+      break;
+    case 6:
+      rentApartment();
+      break;
+    case 7:
+      printf("\nВихід з програми\n");
+      break;
+    default:
+      printf("Невірний вибір. Спробуйте ще раз.\n");
+      printf("-------------------------------------\n");
+      break;
+    }
+  } while (choice != 7);
+
 }
